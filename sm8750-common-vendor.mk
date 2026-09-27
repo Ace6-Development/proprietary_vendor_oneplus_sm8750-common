@@ -426,7 +426,6 @@ PRODUCT_PACKAGES += \
     libhdrdynamic \
     libhdrdynamicootf \
     libhdrvivid \
-    libhwcsensor \
     libidl \
     libintervmipc \
     libkcl \

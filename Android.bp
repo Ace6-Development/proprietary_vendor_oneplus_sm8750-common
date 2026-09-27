@@ -3386,46 +3386,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libhwcsensor",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libhwcsensor.so",
-            ],
-            shared_libs: [
-                "libqservice",
-                "vendor.qti.hardware.display.postproc-V1-ndk",
-                "libcwb_qcom_aidl",
-                "libdisplayconfig.qti",
-                "vendor.qti.hardware.display.config-V12-ndk",
-                "libui",
-                "libhidlbase",
-                "libhidltransport",
-                "libhwbinder",
-                "libbinder",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libbinder_ndk",
-                "android.frameworks.sensorservice-V1-ndk",
-                "libsensorndkbridge",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libidl",
     owner: "oneplus",
     strip: {
